@@ -1,3 +1,15 @@
+# provider and backend
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+backend "s3" {
+  bucket = "example-bucket"
+  key = "test/terraform.tfstate"
+  region = "us-east-1"
+}
+
 # network configuration
 
 resource "aws_vpc" "example-vpc" {
