@@ -1,6 +1,6 @@
 FROM node:14-alpine
 WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+COPY ["package.json", "package-lock.json*", "tsconfig.json*"]
 RUN npm install 
 COPY . .
 EXPOSE 3000
