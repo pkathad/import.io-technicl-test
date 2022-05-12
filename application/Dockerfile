@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:15.9.0-alpine
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "tsconfig.json*"]
 RUN npm install 
